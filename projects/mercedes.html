@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mercedes-Benz Power BI Dashboard — Hassan Umar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="project-page">
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">MHU</a>
+      <nav class="nav-links">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#education">Education</a>
+        <a href="../index.html#contact">Contact</a>
+        <a href="../assets/cv/hassan-cv.pdf" class="btn-nav" target="_blank" rel="noopener">Download CV</a>
+      </nav>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">✕</button>
+    <nav class="drawer-links">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#skills">Skills</a>
+      <a href="../index.html#education">Education</a>
+      <a href="../index.html#contact">Contact</a>
+      <a href="../assets/cv/hassan-cv.pdf" class="btn-drawer" target="_blank" rel="noopener">Download CV</a>
+    </nav>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <main>
+    <div class="project-hero">
+      <div class="container">
+        <p class="project-breadcrumb"><a href="../index.html">← Back to Portfolio</a> / Projects</p>
+        <div class="project-hero-tags">
+          <span class="tag tag-industry">Industry</span>
+          <span class="tag tag-data">Data Engineering</span>
+          <span class="tag tag-manufacturing">Manufacturing</span>
+        </div>
+        <h1 class="project-hero-title">Power BI Dashboard System<br/>for Production Scrap Visibility</h1>
+        <p class="project-hero-org">Mercedes-Benz AG · Sindelfingen, Germany</p>
+        <div class="project-hero-meta">
+          <div class="project-meta-item">
+            <span class="project-meta-label">Period</span>
+            <span class="project-meta-value">Nov 2024 – Jan 2025</span>
+          </div>
+          <div class="project-meta-item">
+            <span class="project-meta-label">Role</span>
+            <span class="project-meta-value">Engineering Intern</span>
+          </div>
+          <div class="project-meta-item">
+            <span class="project-meta-label">Team</span>
+            <span class="project-meta-value">3 members</span>
+          </div>
+          <div class="project-meta-item">
+            <span class="project-meta-label">Grade</span>
+            <span class="project-meta-value">1.3 (German scale)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-body">
+      <div class="container">
+
+        <!-- PROBLEM -->
+        <div class="project-section">
+          <span class="project-section-label">01 — Problem</span>
+          <h2>The Challenge</h2>
+          <p>Mercedes-Benz production lines generate significant material scrap across multiple production stages. Without real-time visibility into where and how scrap is being generated, prioritising corrective action is slow and reactive. The goal was to design a data system that could surface scrap patterns at scale and enable management to act on them.</p>
+        </div>
+
+        <!-- APPROACH -->
+        <div class="project-section">
+          <span class="project-section-label">02 — Approach</span>
+          <h2>Technical Approach</h2>
+          <p>Working as part of a three-person team, I designed and developed a 4-tier Power BI dashboard system that connected to live production data and surfaced scrap metrics in a structured, hierarchical format — from plant-level down to individual production line.</p>
+          <p>Two key analytical methods were applied to the defect data:</p>
+          <ul>
+            <li><strong>Moving averages</strong> — to smooth short-term variance and identify genuine trend directions in scrap generation over time</li>
+            <li><strong>Pareto weighting</strong> — to rank scrap sources by impact and identify the 20% of causes responsible for the majority of cost</li>
+          </ul>
+          <p>The 4-tier structure allowed drill-down from executive summary to line-level detail, making the system useful to both board-level stakeholders and floor supervisors within the same platform.</p>
+          <p>The project was presented as a thesis-style defence to board-level stakeholders and placed first among competing project groups.</p>
+
+          <!-- ASSET PLACEHOLDER — replace with real anonymised screenshots -->
+          <div class="asset-grid">
+            <div class="asset-placeholder">
+              <!-- To add: <img src="../assets/projects/mercedes/dashboard-tier1.jpg" alt="Dashboard overview (anonymised)" /> -->
+              <span class="mono">dashboard screenshot</span>
+              <span class="mono">(anonymised)</span>
+            </div>
+            <div class="asset-placeholder">
+              <!-- To add: <img src="../assets/projects/mercedes/architecture.jpg" alt="4-tier architecture diagram" /> -->
+              <span class="mono">4-tier architecture</span>
+              <span class="mono">diagram</span>
+            </div>
+          </div>
+          <p class="confidential-note">⚠ Note: Specific production line names, supplier data, and internal KPI values are confidential and have been omitted. Dashboard screenshots above are anonymised. Methodology and system architecture are described in full.</p>
+        </div>
+
+        <!-- RESULTS -->
+        <div class="project-section">
+          <span class="project-section-label">03 — Results</span>
+          <h2>Outcomes</h2>
+          <div class="result-grid">
+            <div class="result-card">
+              <span class="result-num">63%</span>
+              <span class="result-label">projected scrap cost reduction, Year 1</span>
+            </div>
+            <div class="result-card">
+              <span class="result-num">74–83%</span>
+              <span class="result-label">projected reduction over 4–5 years</span>
+            </div>
+            <div class="result-card">
+              <span class="result-num">1st</span>
+              <span class="result-label">place among competing project groups</span>
+            </div>
+          </div>
+          <p>The project received a grade of 1.3 on the German academic scale and a letter of recommendation from Mercedes-Benz. The system architecture and Pareto-based prioritisation framework were validated by the engineering panel.</p>
+
+          <!-- Letter of Recommendation placeholder -->
+          <div class="asset-grid" style="grid-template-columns: 1fr;">
+            <div class="asset-placeholder">
+              <!-- To add: <img src="../assets/projects/mercedes/lor.jpg" alt="Letter of Recommendation from Mercedes-Benz" /> -->
+              <span class="mono">letter of recommendation</span>
+              <span class="mono">Mercedes-Benz AG</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TOOLS -->
+        <div class="project-section">
+          <span class="project-section-label">04 — Tools</span>
+          <h2>Tools &amp; Technologies</h2>
+          <div class="tools-used">
+            <span class="tool-tag">Power BI</span>
+            <span class="tool-tag">Microsoft Azure</span>
+            <span class="tool-tag">Statistical Analysis</span>
+            <span class="tool-tag">Pareto Analysis</span>
+            <span class="tool-tag">Moving Averages</span>
+            <span class="tool-tag">Data Visualisation</span>
+          </div>
+        </div>
+
+        <!-- NAV -->
+        <div class="project-nav">
+          <a href="../index.html#projects" class="project-nav-back">← All Projects</a>
+          <a href="stellum.html" class="card-link">Next Project: Stellum →</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="mono footer-text">Muhammad Hassan Umar · Dubai, UAE · <a href="mailto:meet.mhassanumar@gmail.com">meet.mhassanumar@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

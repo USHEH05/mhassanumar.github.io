@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PROJECT TITLE — Hassan Umar</title>
+  <!-- UPDATE: Change "PROJECT TITLE" above to the actual project name -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="project-page">
+
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">MHU</a>
+      <nav class="nav-links">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#education">Education</a>
+        <a href="../index.html#contact">Contact</a>
+        <a href="../assets/cv/hassan-cv.pdf" class="btn-nav" target="_blank" rel="noopener">Download CV</a>
+      </nav>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobileDrawer">
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">✕</button>
+    <nav class="drawer-links">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#skills">Skills</a>
+      <a href="../index.html#education">Education</a>
+      <a href="../index.html#contact">Contact</a>
+      <a href="../assets/cv/hassan-cv.pdf" class="btn-drawer" target="_blank" rel="noopener">Download CV</a>
+    </nav>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <main>
+    <div class="project-hero">
+      <div class="container">
+        <p class="project-breadcrumb"><a href="../index.html">← Back to Portfolio</a> / Projects</p>
+
+        <!-- TAGS: Choose from: tag-industry, tag-data, tag-design, tag-sustainability, tag-experimental, tag-aero, tag-computational, tag-manufacturing -->
+        <div class="project-hero-tags">
+          <span class="tag tag-design">DOMAIN TAG</span>
+        </div>
+
+        <h1 class="project-hero-title">PROJECT TITLE</h1>
+        <p class="project-hero-org">Course / Organisation · Institution</p>
+
+        <div class="project-hero-meta">
+          <div class="project-meta-item">
+            <span class="project-meta-label">Year</span>
+            <span class="project-meta-value">YEAR</span>
+          </div>
+          <div class="project-meta-item">
+            <span class="project-meta-label">Grade / Result</span>
+            <span class="project-meta-value">RESULT</span>
+          </div>
+          <!-- Add or remove meta items as needed -->
+        </div>
+      </div>
+    </div>
+
+    <div class="project-body">
+      <div class="container">
+
+        <!-- SECTION 01: PROBLEM / CONTEXT -->
+        <div class="project-section">
+          <span class="project-section-label">01 — Problem</span>
+          <h2>The Challenge</h2>
+          <p>Describe the problem or context here. What was the engineering challenge? What constraints existed?</p>
+        </div>
+
+        <!-- SECTION 02: APPROACH / METHODOLOGY -->
+        <div class="project-section">
+          <span class="project-section-label">02 — Approach</span>
+          <h2>Technical Approach</h2>
+          <p>Describe how you approached the problem. What methods, analyses, or design decisions did you make?</p>
+
+          <!-- ASSETS: Replace placeholder divs with <img> tags when you have images -->
+          <!-- See README.md for exact instructions on adding images -->
+          <div class="asset-grid">
+            <div class="asset-placeholder">
+              <!-- To add image: <img src="../assets/projects/YOUR-PROJECT-FOLDER/image1.jpg" alt="Description" /> -->
+              <span class="mono">image placeholder</span>
+            </div>
+            <div class="asset-placeholder">
+              <!-- To add image: <img src="../assets/projects/YOUR-PROJECT-FOLDER/image2.jpg" alt="Description" /> -->
+              <span class="mono">image placeholder</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 03: RESULTS -->
+        <div class="project-section">
+          <span class="project-section-label">03 — Results</span>
+          <h2>Outcomes</h2>
+
+          <!-- RESULT NUMBERS: Fill in key quantitative results -->
+          <div class="result-grid">
+            <div class="result-card">
+              <span class="result-num">XX</span>
+              <span class="result-label">metric one</span>
+            </div>
+            <div class="result-card">
+              <span class="result-num">XX</span>
+              <span class="result-label">metric two</span>
+            </div>
+            <div class="result-card">
+              <span class="result-num">XX</span>
+              <span class="result-label">metric three</span>
+            </div>
+          </div>
+
+          <p>Describe the results in prose here.</p>
+        </div>
+
+        <!-- SECTION 04: TOOLS -->
+        <div class="project-section">
+          <span class="project-section-label">04 — Tools</span>
+          <h2>Tools &amp; Technologies</h2>
+          <div class="tools-used">
+            <span class="tool-tag">Tool 1</span>
+            <span class="tool-tag">Tool 2</span>
+            <span class="tool-tag">Tool 3</span>
+          </div>
+        </div>
+
+        <!-- NAVIGATION -->
+        <div class="project-nav">
+          <a href="../index.html#projects" class="project-nav-back">← All Projects</a>
+          <!-- Optional: link to next project -->
+          <!-- <a href="next-project.html" class="card-link">Next Project →</a> -->
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="mono footer-text">Muhammad Hassan Umar · Dubai, UAE · <a href="mailto:meet.mhassanumar@gmail.com">meet.mhassanumar@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
