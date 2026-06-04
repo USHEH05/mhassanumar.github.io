@@ -152,11 +152,11 @@ Below it, there's a commented-out template. Remove the `<!--` and `-->` comment 
 
 Every time you make changes, run these three commands in the VS Code terminal:
 
-```bash
+
 git add .
 git commit -m "Brief description of what you changed"
 git push
-```
+
 
 The site updates automatically within 1–2 minutes.
 
