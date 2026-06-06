@@ -3,70 +3,6 @@
 
 ---
 
-## Initial Setup (First time only)
-
-### Step 1 — Create a GitHub repository
-
-1. Go to [github.com](https://github.com) and log in
-2. Click the **+** icon (top right) → **New repository**
-3. Name it: `mhassanumar.github.io` (this exact name makes GitHub Pages work automatically)
-4. Set it to **Public**
-5. **Do NOT** check "Add a README file" (we already have one)
-6. Click **Create repository**
-
-### Step 2 — Connect your local folder to GitHub
-
-Open VS Code, open a terminal (`Ctrl + `` ` ``), and run these commands one by one:
-
-```bash
-git init
-git add .
-git commit -m "Initial portfolio commit"
-git branch -M main
-git remote add origin https://github.com/YOUR-GITHUB-USERNAME/mhassanumar.github.io.git
-git push -u origin main
-```
-
-Replace `YOUR-GITHUB-USERNAME` with your actual GitHub username.
-
-### Step 3 — Enable GitHub Pages
-
-1. Go to your repository on GitHub
-2. Click **Settings** (top tab)
-3. Click **Pages** (left sidebar, under "Code and automation")
-4. Under "Source", select **Deploy from a branch**
-5. Select branch: **main**, folder: **/ (root)**
-6. Click **Save**
-
-Your site will be live at: `https://YOUR-GITHUB-USERNAME.github.io` within 2–5 minutes.
-
----
-
-## Adding Your Personal Photo
-
-1. Save your photo as `profile.jpg` (a clean, professional headshot)
-2. Place it at: `assets/img/profile.jpg`
-3. Open `index.html`
-4. Find this comment block:
-   ```html
-   <!-- Replace with: <img src="assets/img/profile.jpg" alt="Muhammad Hassan Umar" /> -->
-   <div class="photo-placeholder-inner">
-   ```
-5. Replace the entire `<div class="photo-placeholder-inner">...</div>` block with:
-   ```html
-   <img src="assets/img/profile.jpg" alt="Muhammad Hassan Umar" />
-   ```
-
----
-
-## Adding Your CV
-
-1. Save your CV as `hassan-cv.pdf`
-2. Place it at: `assets/cv/hassan-cv.pdf`
-3. The Download CV buttons throughout the site will work automatically — no code changes needed.
-
----
-
 ## Adding Images to a Project Page
 
 1. Create a folder for your project inside `assets/projects/` if it doesn't exist  
@@ -179,6 +115,8 @@ The site updates automatically within 1–2 minutes.
 │       ├── mercedes/       ← Project image folders
 │       ├── stellum/
 │       ├── wind-tunnel/
+│       ├── autocad-personal-projects/
+│       ├── drawings-md/
 │       └── matlab-app/
 └── projects/
     ├── _template.html      ← Copy this for new projects
