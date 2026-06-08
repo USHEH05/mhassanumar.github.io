@@ -859,3 +859,24 @@ ul { list-style: none; }
   .hero-ctas a { text-align: center; }
   .result-grid { grid-template-columns: 1fr; }
 }
+
+/* ── TECHNICAL DRAWINGS ─────────────────────────────────────── */
+.drawing-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.drawing-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(28, 63, 110, 0.1);
+}
+.drawing-img img {
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
