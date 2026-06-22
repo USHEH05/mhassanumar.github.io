@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colebrook-White Pipe Flow Solver — Hassan Umar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=Lora:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="project-page">
+
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">MHU</a>
+      <nav class="nav-links">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#education">Education</a>
+        <a href="../index.html#contact">Contact</a>
+        <a href="../assets/cv/hassan-cv.pdf" class="btn-nav" target="_blank" rel="noopener">Download CV</a>
+      </nav>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobileDrawer">
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">✕</button>
+    <nav class="drawer-links">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#skills">Skills</a>
+      <a href="../index.html#education">Education</a>
+      <a href="../index.html#contact">Contact</a>
+      <a href="../assets/cv/hassan-cv.pdf" class="btn-drawer" target="_blank" rel="noopener">Download CV</a>
+    </nav>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <main>
+    <div class="project-hero">
+      <div class="container">
+        <p class="project-breadcrumb"><a href="../index.html">← Back to Portfolio</a> / Projects</p>
+        <div class="project-hero-tags">
+          <span class="tag tag-computational">Computational</span>
+          <span class="tag tag-experimental">Fluid Mechanics</span>
+        </div>
+        <h1 class="project-hero-title">Colebrook-White<br/>Pipe Flow Solver</h1>
+        <p class="project-hero-org">Independent Project · MATLAB</p>
+        <div class="project-hero-meta">
+          <div class="project-meta-item">
+            <span class="project-meta-label">Year</span>
+            <span class="project-meta-value">2025</span>
+          </div>
+          <div class="project-meta-item">
+            <span class="project-meta-label">Method</span>
+            <span class="project-meta-value">Newton-Raphson</span>
+          </div>
+          <div class="project-meta-item">
+            <span class="project-meta-label">Validated Against</span>
+            <span class="project-meta-value">Moody Chart</span>
+          </div>
+          <div class="project-meta-item">
+            <span class="project-meta-label">Repository</span>
+            <span class="project-meta-value"><a href="https://github.com/USHEH05/matlab-projects" target="_blank" rel="noopener" style="color: var(--accent);">GitHub →</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-body">
+      <div class="container">
+
+        <div class="project-section">
+          <span class="project-section-label">01 — Problem</span>
+          <h2>The Challenge</h2>
+          <p>The Colebrook-White equation is the industry-standard implicit formula for computing the Darcy-Weisbach friction factor in turbulent pipe flow. Because it is implicit, i.e. the friction factor appears on both sides, therefore, it cannot be solved analytically. The goal was to implement a robust iterative numerical solver and use it to compute full pipe flow characteristics across a turbulent velocity range.</p>
+        </div>
+
+        <div class="project-section">
+          <span class="project-section-label">02 — Implementation</span>
+          <h2>Technical Approach</h2>
+          <p>The solver was implemented across three MATLAB files with distinct responsibilities:</p>
+          <ul>
+            <li><strong>colebrookFunction.m</strong> — Core Newton-Raphson solver. Uses the Swamee-Jain explicit approximation as the initial guess to accelerate convergence. Includes tolerance control, maximum iteration limits, and convergence tracking per iteration.</li>
+            <li><strong>index.m</strong> — Velocity sweep across the turbulent flow regime. Applies Darcy-Weisbach to compute pressure drop and head loss at each velocity. Generates a Moody chart validation plot with roughness asymptote and a Newton-Raphson convergence subplot.</li>
+            <li><strong>solvePipe.m</strong> — Interactive command-line tool. Prompts for pipe geometry and fluid properties, then outputs Reynolds number, flow regime classification, friction factor, pressure drop, and head loss.</li>
+          </ul>
+
+          <div class="asset-grid">
+            <div class="asset-placeholder">
+                <img src="../assets/projects/colebrook/colebrook_graphs.jpg" alt="Colebrook solver output graphs" />    
+              <span class="mono">Colebrook solver output graphs</span>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="project-section">
+          <span class="project-section-label">03 — Results</span>
+          <h2>Outcomes</h2>
+          <div class="result-grid">
+            <div class="result-card">
+              <span class="result-num">3</span>
+              <span class="result-label">validated output modules</span>
+            </div>
+            <div class="result-card">
+              <span class="result-num">✓</span>
+              <span class="result-label">Moody chart validation confirmed</span>
+            </div>
+            <div class="result-card">
+              <span class="result-num">NR</span>
+              <span class="result-label">Newton-Raphson with convergence tracking</span>
+            </div>
+          </div>
+          <p>Results validated against known Moody chart values across the turbulent regime. The solver converges reliably from the Swamee-Jain initial guess within a small number of iterations for all tested conditions.</p>
+        </div>
+
+        <div class="project-section">
+          <span class="project-section-label">04 — Tools</span>
+          <h2>Tools &amp; Methods</h2>
+          <div class="tools-used">
+            <span class="tool-tag">MATLAB</span>
+            <span class="tool-tag">Newton-Raphson</span>
+            <span class="tool-tag">Colebrook-White Equation</span>
+            <span class="tool-tag">Darcy-Weisbach</span>
+            <span class="tool-tag">Moody Chart</span>
+            <span class="tool-tag">Swamee-Jain Approximation</span>
+          </div>
+        </div>
+
+        <div class="project-nav">
+          <a href="../index.html#projects" class="project-nav-back">← All Projects</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="mono footer-text">Muhammad Hassan Umar · Dubai, UAE · <a href="mailto:meet.mhassanumar@gmail.com">meet.mhassanumar@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
